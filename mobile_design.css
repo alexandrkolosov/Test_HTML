@@ -1,0 +1,35 @@
+.navbar {
+    display: flex; 
+    background-color: slateblue;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 20px;
+
+}
+
+.links {
+    display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .links {
+        flex-direction: column;
+    }
+}
+.navbar .links {
+    margin-right: 40px;
+}
+
+.navbar h1 {
+    margin-left: 40px;
+}
