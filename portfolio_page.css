@@ -10,12 +10,29 @@ body {
     height: 24px;
 }
 
+.navbar .hamburger {
+    height: 30px;
+    width: 30px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.navbar .bar {
+    background-color: black;
+    height: 3px;
+    width: 28px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 64px 0;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .navbar .left {
@@ -50,7 +67,7 @@ body {
     "foam foam dimensional";
     grid-gap: 10px;
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 
 }
@@ -123,9 +140,28 @@ body {
 .overlay.white {
     color: white;
 }
+@media only screen and (min-width: 1000px) {
+.navbar .hamburger {
+    display:none;
+}
+}
 
 @media only screen and (max-width: 1000px) {
-    
+
+.navbar {
+    box-sizing: border-box;
+    padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar .right {
+    display: none;
+}
 .grid_container {
     max-width: 100%;
     grid-template-areas:
@@ -140,4 +176,14 @@ body {
     .project .overlay {
         font-size: 20px;
     }
+    .footer {
+        font-size: 12px;
+        padding: 16px;
+    }
+}
+
+.footer {
+    font-weight: bold;
+    text-align: center;
+    padding: 32px;
 }
