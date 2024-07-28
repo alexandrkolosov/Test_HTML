@@ -26,10 +26,13 @@ body {
     animation: 1s 0.666s jump infinite ease-in-out;
 }
 @keyframes jump {
-    0%, 100%{
-        transform: translateY(0);
+    0%%{
+        transform: translateY(0) scale(1);
     }
     30% {
-        transform: translateY(-15px);
+        transform: translateY(-15px) scale(1.2);
+    }
+    75% {
+        transform: translateY(0) scale(1);
     }
 }
