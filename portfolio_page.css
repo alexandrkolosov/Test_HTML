@@ -31,9 +31,9 @@ body {
     position: fixed;
     z-index: 2;
     top: 0;
-    right: 0;
+    right: -100px;
     padding: 16px;
-
+    transition: transform 0.5s;
 }
 
 .mobilenav img {
@@ -52,6 +52,10 @@ body {
 .mobilenav a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.openDrawer {
+    transform: translateX(-100px);
 }
 
 .navbar .bar1,.bar2,.bar3 {
