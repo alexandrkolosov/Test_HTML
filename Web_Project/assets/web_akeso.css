@@ -324,6 +324,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: -32px;
+    padding: 25px 0;
 }
 
 .partners-grid img {
@@ -333,4 +334,18 @@ p {
 
 .hero .hero-phone-container img {
     height: 400px;
+}
+
+/* Unified platform */
+.unified-platform {
+    padding: 150px 0; 
+}
+
+.unified-platform .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md);
+}
+
+.unified-platform .primary-button:hover {
+    background-color: var(--primary-accent);
 }
