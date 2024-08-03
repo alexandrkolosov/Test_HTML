@@ -501,6 +501,7 @@ p {
     display: flex;
     justify-content: center;
     color: var(--text-light);
+    position: relative;
 }
 
 .global-section h2 {
@@ -517,6 +518,7 @@ p {
 
 .global-section .card-container {
     display: flex;
+    margin: 128px 0px 128px 0;
 }
 
 .global-section .card-container .card {
@@ -530,4 +532,12 @@ p {
     color: var(--text-light);
     border-left: 2px var(--blue-1) solid;
     padding: 0 0 0 var(--spacing-sm);
+    line-height: 28px;
+}
+
+#world_right {
+    width: 644px;
+    opacity: 25%;
+    position: absolute;
+    top: 0;
 }
