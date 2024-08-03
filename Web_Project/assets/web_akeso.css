@@ -402,9 +402,44 @@ p {
 /* integration sections styles */
 
 .integration-section {
-    color: var(--text-light)
+    color: var(--text-light);
+    background-color: var(--primary-accent);
 }
 
 .column-text-h2 {
-    color: var(--bg-light)
+    color: var(--bg-light);
+}
+
+.integration-section .card-container {
+    display: flex;
+    margin: var(--spacing-lg);
+}
+
+.integration-section .card-container .card {
+    width: 50%;
+}
+
+.integration-section .primary-button {
+    background-color: var(--blue-1);
+    color: var(--primary-accent);
+    margin: var(--spacing-md) 0 0 0;
+}
+
+.integration-section .primary-button:hover {
+    background-color: var(--bg-white);
+}
+
+.integration-section .secondary-button {
+    color: var(--blue-1)
+}
+
+#api-code  {
+    max-width: 470px;
+    margin: 0 0 var(--spacing-md) 0;
+    border-radius: 20px;
+}
+
+#terminal-code {
+    max-width: 470px;
+    border-radius: 20px;
 }
