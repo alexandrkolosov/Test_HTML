@@ -52,11 +52,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+main {
+    width: 100%;
+}
 /* NAVBAR - MENU */
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: var(--standart-width);
@@ -312,6 +316,9 @@ p {
 
 .hero {
     margin: var(--spacing-xl) 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero .hero-phone-container {
@@ -328,6 +335,11 @@ p {
 
 /* Partners */
 
+.partners-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .partners-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -348,6 +360,9 @@ p {
 /* Unified platform */
 .unified-platform {
     padding: 150px 0; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .unified-platform .primary-button {
@@ -366,6 +381,12 @@ p {
 
 /* Graphic section */
 
+.graphic-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .graphic-grid {
     display: grid;
     grid-template-areas: 
@@ -373,6 +394,7 @@ p {
     "phone slack slack"
     "phone dash dash";
     grid-gap: var(--spacing-xl);
+    
 }
 
 #card {
@@ -404,6 +426,9 @@ p {
 .integration-section {
     color: var(--text-light);
     background-color: var(--primary-accent);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .column-text-h2 {
@@ -442,4 +467,67 @@ p {
 #terminal-code {
     max-width: 470px;
     border-radius: 20px;
+}
+
+/* Why AkesoMind Section */
+
+.why-akeso-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.why-akeso-section .card-container {
+    display: flex;
+    margin: var(--spacing-lg);
+}
+
+.why-akeso-section .card-container .card {
+    width: 25%;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-sm) 0 0;
+    box-sizing: border-box;
+}
+
+.why-akeso-section .secondary-text {
+    color: var(--text-dark)
+}
+
+/* Global Section */ 
+
+.global-section {
+    background-color: var(--primary-accent);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-light);
+}
+
+.global-section h2 {
+    color: var(--bg-white)
+}
+
+.global-section a {
+    color: var(--blue-1);
+}
+
+.global-section a:hover {
+    color: var(--text-light);
+}
+
+.global-section .card-container {
+    display: flex;
+}
+
+.global-section .card-container .card {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md)0 0;
+}
+
+.global-section .card-container .card h4 {
+    color: var(--text-light);
+    border-left: 2px var(--blue-1) solid;
+    padding: 0 0 0 var(--spacing-sm);
 }
