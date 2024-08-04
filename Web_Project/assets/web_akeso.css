@@ -36,7 +36,13 @@
     --btn-hover-color: #6d7a88;
 
     --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
-
+    --primary-gradient: linear-gradient(
+        101.33deg,
+        #08209a 0.76%,
+        #6563ff 33.33%,
+        #36c5f0 76.92%,
+        #83e2ff 96.96%
+        );
 }
 
 body {
@@ -547,8 +553,86 @@ p {
 .virtual-seminars-section {
     display: flex;
     justify-content: center;
+    padding: calc(var(--spacing-xl) * 2) 0;
 }
 
 #sessions-3 {
-    width: 300px;
+    width: 448px;
+    z-index: 2;
+}
+
+.virtual-seminars-section .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0 0;
+}
+
+.virtual-seminars-section .primary-button:hover {
+    background-color: var(--primary-accent);
+}
+
+.akeso-sessions-card {
+    width: 540px;
+    height: 446px;
+    box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.akeso-sessions-card .card-top {
+    background-color: var(--purple-1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.akeso-sessions-card .card-top::before {
+    background: var(--primary-gradient);
+    content: "";
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    transform: skewY(-5deg);
+    top: -39%;
+}
+
+.virtual-seminars-section .avatars {
+    position: absolute;
+    bottom: -75px;
+    left: var(--spacing-lg);
+    z-index: 3;
+}
+
+.virtual-seminars-section .avatars img {
+    width: 80px;
+}
+
+.virtual-seminars-section .avatars img:nth-of-type(2) {
+    position: absolute;
+    left: 60px;
+}
+
+.virtual-seminars-section .card-bottom {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: var(--spacing-xl)
+}
+
+.virtual-seminars-section .card-bottom .secondary-text {
+    color: var(--text-dark);
+    width: 50%;
+    font-weight: bold;
+}
+
+.virtual-seminars-section .card-bottom .subtitle {
+    margin: calc(var(--spacing-md) * 1) 0;
+}
+
+.virtual-seminars-section .column-left {
+    height: 446px;
+    padding: 0 var(--spacing-xl);
 }
