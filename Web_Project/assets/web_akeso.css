@@ -4,7 +4,7 @@
     --text-grey: #adbdcc;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Anek Telugu", sans-serif;
-    --h1-size: 84px;
+    --h1-size: 70px;
     --h1-height: 108px;
     --h2-size: 50px;
     --h2-height: 75px;
@@ -43,6 +43,10 @@
         #36c5f0 76.92%,
         #83e2ff 96.96%
         );
+
+    /* Gradient Color for script */
+    
+    
 }
 
 body {
@@ -71,6 +75,7 @@ main {
     width: 100%;
     max-width: var(--standart-width);
     padding: 0 var(--spacing-md);
+    margin: 0 0 var(--spacing-md) 0;
 }
 
 .navbar img {
@@ -304,6 +309,25 @@ p {
     height: 50px;
     margin: 0 0 var(--spacing-sm) 0;
 }
+
+/* Animated Gradient */ 
+
+#gradient-canvas {
+    
+    width: 200%;
+    height: 970px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: -800px;
+    left: -44%;
+    z-index: -1;
+    --gradient-color-1: #006e2a;
+    --gradient-color-2: #00a37a;
+    --gradient-color-3: #005b8e; 
+    --gradient-color-4: #c5e384;
+}
+
+
 /* Hero Content */ 
 
 
@@ -369,6 +393,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--bg-light);
 }
 
 .unified-platform .primary-button {
@@ -391,6 +416,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--bg-light);
 }
 
 .graphic-grid {
