@@ -634,5 +634,11 @@ p {
 
 .virtual-seminars-section .column-left {
     height: 446px;
-    padding: 0 var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+}
+/* START NOW */
+
+.startnow-section {
+    display: flex;
+    justify-content: center;
 }
