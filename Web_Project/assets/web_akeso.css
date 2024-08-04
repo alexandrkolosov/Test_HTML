@@ -541,3 +541,14 @@ p {
     position: absolute;
     top: 0;
 }
+
+/* Virtual Seminars */
+
+.virtual-seminars-section {
+    display: flex;
+    justify-content: center;
+}
+
+#sessions-3 {
+    width: 300px;
+}
