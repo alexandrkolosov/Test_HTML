@@ -403,26 +403,31 @@ p {
     
 }
 
+
 #card {
     grid-area: card;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 #slack {
     grid-area: slack;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #phone {
     grid-area: phone;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #dash {
     grid-area: dash;
     width: 100%;
+    border-radius: 20px;
     
 }
 
@@ -641,4 +646,27 @@ p {
 .startnow-section {
     display: flex;
     justify-content: center;
+    padding: calc(var(--spacing-lg) * 2);
+}
+
+.startnow-section .primary-button {
+    background-color: var(--purple-1);
+}
+
+.startnow-section .primary-button:hover {
+    background-color: var(--primary-accent);
+}
+
+.startnow-section .column-right {
+    flex-direction: row;
+}
+
+.startnow-section .column-right .card {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-md)0 0;
+}
+
+.startnow-section .column-left {
+    padding-right: var(--spacing-xl);
 }
