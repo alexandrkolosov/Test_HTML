@@ -852,6 +852,7 @@ p {
         width: 100%;
         position: relative;
         overflow-x: hidden;
+        overflow-y: auto;
     }
 
     /* MENU */ 
@@ -878,6 +879,11 @@ p {
 
     }
 
+    #gradient-canvas {
+        overflow-y: hidden;
+    }
+
+    
     .navbar {
         display: flex;
         justify-content: space-between;
