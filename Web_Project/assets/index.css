@@ -882,7 +882,9 @@ p {
     #gradient-canvas {
         overflow-y: hidden;
     }
-
+    .hero .intro {
+        overflow-y: hidden;
+    }
     
     .navbar {
         display: flex;
