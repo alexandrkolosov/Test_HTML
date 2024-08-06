@@ -114,6 +114,14 @@ main {
     background: rgba(250, 250, 250, 0.5);
 }
 
+.navbar a {
+    color: var(--bg-light);
+}
+
+.hero a {
+    color:var(--bg-light);
+}
+
 h1 {
     font-weight: 600;
     font-size: var(--h1-size);
@@ -467,6 +475,8 @@ p {
 
 /* integration sections styles */
 
+
+
 .integration-section {
     color: var(--text-light);
     width: 100%;
@@ -799,4 +809,116 @@ p {
     display: flex;
     align-items: center;
     margin: var(--spacing-md) 0 0;
+}
+
+
+/* ADAPTIVE */
+
+@media only screen and (max-width: 1144px) {
+    .section-container {
+        padding: var(--spacing-lg);
+    }
+}
+
+
+/* Tablet size */
+
+@media only screen and (max-width: 800px) {
+   :root {
+    --h1-size: 45px;
+    --h1-height: 72px;
+    --h2-size: 40px;
+    --h2-height: 45px;
+    --h3-size: 26px;
+    --h4-size: 22px;
+    --h5-size: 20px;
+    --h6-size: 18px;
+    --standart-width: 800px; 
+   }
+
+   .integration-section .column-left {
+    width: 60%;
+   }
+
+   .column-right {
+    position: relative;
+   }
+
+   .integration-section .column-right {
+    width: 40%;
+    
+   }
+
+   .integration-section .column-right img {
+    width: 300px;
+    position: absolute;
+   }
+
+   .integration-section .column-right img:first-child {
+    top: 50px;
+    left: 50px;
+    transform: translateX(-20%);
+   }
+
+   .integration-section .column-right img:last-child {
+    top: 400px;
+    left: 50px;
+    transform: translateX(-20%);
+   }
+
+   .unified-platform h2 {
+    width: 100%;
+}
+
+   .hero-phone {
+    width: 400px;
+
+   }
+   .partners-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 0;
+        margin: 0;
+    
+   }
+   .partners-grid img {
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    }
+}
+
+/* Mobile size */
+
+@media only screen and (max-width: 550px) {
+
+    .two-column {
+        flex-direction: column;
+    }
+
+    .unified-platform {
+        padding: 20px;
+    }
+
+    .unified-platform h2 {
+        width: 100%;
+    }
+
+    .unified-platform .section-container .two-column .column-right {
+  width: 100%;
+    }
+
+    .two-column .column-left {
+        width: 100%
+    }
+
+    .two-column .column-right {
+        width: 100%
+        padding: 0;
+    }
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+
 }
