@@ -48,6 +48,13 @@
     
     
 }
+body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
 
 body {
     font-family: var(--body-font);
@@ -818,12 +825,30 @@ p {
     .section-container {
         padding: var(--spacing-lg);
     }
+    /* Integration Section */ 
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
 }
 
 
 /* Tablet size */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 860px) {
+
+    /* Integration Section */ 
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
+
    :root {
     --h1-size: 45px;
     --h1-height: 72px;
@@ -834,6 +859,91 @@ p {
     --h5-size: 20px;
     --h6-size: 18px;
     --standart-width: 800px; 
+   }
+
+   .integration-section {
+    
+    padding-top: 0px;
+   }
+
+   .integration-section .column-left {
+    width: 60%;
+   }
+
+   .column-right {
+    position: relative;
+   }
+
+   .integration-section .column-right {
+    width: 40%;
+    
+   }
+
+   .integration-section .column-right img {
+    width: 330px;
+    position: absolute;
+   }
+
+   .integration-section .column-right img:first-child {
+    top: 50px;
+    left: 50px;
+    transform: translateX(-20%);
+   }
+
+   .integration-section .column-right img:last-child {
+    top: 400px;
+    left: 50px;
+    transform: translateX(-20%);
+   }
+
+   .unified-platform h2 {
+    width: 100%;
+}
+
+   .hero-phone {
+    width: 400px;
+
+   }
+   .partners-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 0;
+        margin: 0;
+    
+   }
+   .partners-grid img {
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    /* Integration Section */ 
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+   :root {
+    --h1-size: 45px;
+    --h1-height: 72px;
+    --h2-size: 40px;
+    --h2-height: 45px;
+    --h3-size: 26px;
+    --h4-size: 22px;
+    --h5-size: 20px;
+    --h6-size: 18px;
+    --standart-width: 800px; 
+   }
+
+   .integration-section {
+    padding-bottom: 30px;
+    padding-top: 0px;
    }
 
    .integration-section .column-left {
@@ -890,8 +1000,37 @@ p {
 
 /* Mobile size */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 575px) {
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero {
+    text-align: center;
+}
+.column-right.hero-phone-container {
+    height: 400px;
+
+}
+
+.section-container.two-column  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start_now_0 {
+    margin-left: 170px;
+}
+
+.unified-platform {
+    padding: 30px;
+}
     /* Integration Section */ 
 
     .integration-section .column-left {
@@ -908,23 +1047,25 @@ p {
        }
     
        .integration-section .column-right img {
-        width: 200px;
+        width: 250px;
         position: absolute;
        }
     
        .integration-section .column-right img:first-child {
-        top: 20px;
-        left: -10px;
+        top: 100px;
+        left: -165px;
         transform: translateY(-30%);
        }
     
        .integration-section .column-right img:last-child {
-        top: 20px;
-        left: 200px;
+        top: 100px;
+        left: 100px;
         transform: translateY(-30%);
        }
 
-
+       .why-akeso-section {
+        margin-top: 200px;
+       }
 
     .two-column {
         flex-direction: column;
@@ -957,7 +1098,7 @@ p {
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 500px) {
 
     /* Integration Section */ 
     html, body {
@@ -965,6 +1106,52 @@ p {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
+}
+
+
+.hero {
+    text-align: center;
+}
+.column-right.hero-phone-container {
+    height: 400px;
+
+}
+
+.section-container.two-column  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start_now_0 {
+    margin-left: 100px;
+}
+
+#start_now {
+    margin-left: 100px;
+}
+
+.unified-platform {
+    padding: 30px;
+}
+
+.integration-section .column-left {
+    margin-top: 160px;
+}
+
+#start_now_1 {
+    margin-left: 120px;
+}
+
+#button_learn {
+    display: none;
+}
+
+.integration-section .two-column {
+    display: felx;
+    justify-content: space-around;
+    align-items: center;
 }
     .integration-section .column-left {
         width: 70%;
@@ -980,14 +1167,16 @@ p {
        }
     
        #api-code {
-        width: 240px;
-        margin-top: 20px;
-        margin-left: 50px;
+        width: 300px;
+        margin-top: -30px;
+        margin-left:80px;
        }
 
        #terminal-code {
         width: 0px;
        }
+       
+
 
        .integration-section::before {
         margin-top: 150px;
@@ -1000,7 +1189,21 @@ p {
        /* Why Akeso Section */
 
        .why-akeso-section {
+        padding-top: 120px;
         padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 90px;
+       }
+
+       .why-akeso-section .card-container {
+        flex-wrap: wrap;
+        margin: 10px;
+        
+       }
+
+       .why-akeso-section .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
        }
 
     .two-column {
@@ -1038,6 +1241,33 @@ p {
 @media only screen and (max-width: 404px) {
 
     /* Integration Section */ 
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* Hero Section */
+    .column-left h1 {
+        text-align: center;
+    }
+    .section-container.two-column {
+
+    }
+
+    .hero-phone {
+        display: none;
+        margin-left: -50px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .column-right.hero-phone-container{
+        display: none;
+    }
+    /* Integration Section */ 
 
     .integration-section .column-left {
         width: 70%;
@@ -1066,13 +1296,16 @@ p {
     
        .integration-section .column-right {
         width: 30%;
-        
+       }
+
+       .integration-section {
+        margin-top: -145px;
        }
     
        #api-code {
         width: 240px;
-        margin-top: 20px;
-        margin-left: 50px;
+        margin-top: -40px;
+        margin-left: 100px;
        }
 
        #terminal-code {
