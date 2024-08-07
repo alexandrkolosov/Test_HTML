@@ -94,6 +94,11 @@ main {
 #Login {
     color: var(--text-dark);
     text-decoration: underline;
+
+}
+
+#sign_in_button {
+    margin-left: 650px;
 }
 
 .menu {
@@ -838,6 +843,10 @@ p {
     .hamburger-button {
         display: none;
     }
+
+    #sign_in_button {
+        margin-left: 500px;
+    }
 }
 
 
@@ -859,6 +868,10 @@ p {
 
     .navbar .menu {
         display: none;
+    }
+
+    #sign_in_button {
+        margin-left: 300px;
     }
 
     
@@ -1047,6 +1060,10 @@ p {
     
    }
 
+   #sign_in_button {
+    margin-left: 250px;
+}
+
   
 
    .integration-section .column-right img {
@@ -1224,6 +1241,9 @@ html, body {
     position: relative;
 }
 
+#sign_in_button {
+    margin-left: 100px;
+}
 
 
 /* Navbar */ 
