@@ -101,7 +101,7 @@ main {
     margin-left: 650px;
 }
 
-.menu {
+/* .menu {
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -116,7 +116,7 @@ main {
 
 .menu a:hover {
     text-decoration: underline;
-    color: var(--text-light)
+    color: var(--text-light) */
 }
 
 .navbar .signin-button {
